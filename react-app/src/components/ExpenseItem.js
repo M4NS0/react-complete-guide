@@ -1,9 +1,16 @@
+import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
 
+
 function ExpenseItem(props) {
-    return (
+    return (       
         <div className="expense-item">
-            <div>{props.date.toISOString()} </div>
+            
+            <ExpenseDate 
+                date={props.date}
+                month={props.month}
+                year={props.year}/>
+
             <div className="expense-item__description">
                 <h2>{props.title}</h2>
                 <div className="expense-item__price">${props.amount}</div>
@@ -12,3 +19,4 @@ function ExpenseItem(props) {
     );
 }
 export default ExpenseItem;
+
