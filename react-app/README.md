@@ -1,4 +1,9 @@
 # Getting Started with Create React App
+Creating new React App is easy.
+
+```sh 
+    yarn create react-app <name> 
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
