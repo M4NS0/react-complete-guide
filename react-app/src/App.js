@@ -1,5 +1,6 @@
 function App() {
-  return (
+  // JSX  code:
+  return (   
     <div>
       <h2>Let's get started!</h2>
     </div>
