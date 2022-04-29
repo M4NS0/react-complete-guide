@@ -25,11 +25,27 @@ const App = () => {
     },
 ];
 
+  const addExpenseHandler = expense => {
+    console.log('In app.js', expense);
+  }
 
   return (   
     <div>
-      <NewExpense />
+      <NewExpense  onAddExpense={addExpenseHandler}/>
+      {/* 
+        2nd step
+        passing value *child-to-parent*
+        onAddExpense={addExpenseHandler} is used recieve data from NewExpense.js
+       */}
+      
+
       <Expenses items={expenses} />
+      {/* 
+        1st step
+        passing value *parent-to-child*
+        items={expenses} is used to pass the array to the component
+        obs:. props can only be used to pass from parent to child 
+      */}
     </div>
   );
 }
